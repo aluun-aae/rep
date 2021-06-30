@@ -24,7 +24,7 @@ class UserblocBloc extends Bloc<UserblocEvent, UserblocState> {
         yield UserblocLoaded(data);
       }
     } catch (e) {
-      yield UserError(CatchException);
+      yield UserError(CatchException.catchError(e));
     }
   }
 }

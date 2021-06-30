@@ -55,13 +55,10 @@ class _MyHomePageState extends State<MyHomePage>
           } else if (state is UserError) {
             return BlocProvider.value(
               value: bloc,
-              child: CustomError(message: state.message),
+              child: CustomError(message: state.message.message),
             );
           }
-          return BlocProvider.value(
-            value: bloc,
-            child: CustomError(),
-          );
+          return CustomLoading();
         },
       ),
     );

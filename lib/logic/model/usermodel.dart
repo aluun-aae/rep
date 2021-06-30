@@ -133,7 +133,7 @@ class Location {
   String city;
   String state;
   String country;
-  String postcode;
+  dynamic postcode;
   Coordinates coordinates;
   Timezone timezone;
 

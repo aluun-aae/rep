@@ -14,7 +14,7 @@ class UserblocLoaded extends UserblocState {
 }
 
 class UserError extends UserblocState {
-  final String message;
+  final CatchException message;
 
   UserError(this.message);
 }
